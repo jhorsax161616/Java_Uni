@@ -1,10 +1,11 @@
 package Id_Static;
 
-import Id_Static.UI.UIMenu;
+import static Id_Static.UI.UIMenu.*;
 
 public class Main {
 
     public static void main(String[] args) {
+        /*
         // Incremento de Id automático por cada objeto creado
         Doctor myDoctor = new Doctor();
         myDoctor.name = "Mendez Pino";
@@ -18,11 +19,20 @@ public class Main {
         myDoctor2.name = "Mendez Pino";
         myDoctor2.showName();
         myDoctor2.showId();
-        
+        */
         
         //Un ejemplo de la utilidad del static con un menu
         //Mejorando la Modularidad del programa... 
-        UIMenu.showMenu();
+        
+        //showMenu();
+        
+        Doctor myDoctor = new Doctor("Elife Tino","Pediatria");
+        System.out.println(myDoctor.name);
+        System.out.println(myDoctor.speciality);
+        
+        Patient patient = new Patient("Alex", "ale.gmail.com");
+        
+        
     }
     
 }

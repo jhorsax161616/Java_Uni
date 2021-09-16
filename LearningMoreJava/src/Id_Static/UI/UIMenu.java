@@ -3,10 +3,16 @@ package Id_Static.UI;
 import java.util.Scanner;
 
 public class UIMenu {
-    
+ 
+    /*
+     final --> Se usa para declarar constantes, en el mayor de los casos
+    las variables static son acompañadas por final
+     */
+    public static final String MONTHS[] = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
+        
     public static void showMenu(){
-        
-        
+
         int op;
         
         do{
@@ -59,6 +65,9 @@ public class UIMenu {
                 case 1:
                 {
                     System.out.println("Reservando cita");
+                    for (int i = 0; i < 4; i++){
+                        System.out.println((1+i) + "." + MONTHS[i]);
+                    }
                 }break;
                 
                 case 2:
