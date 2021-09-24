@@ -1,4 +1,4 @@
-package Id_Static.UI;
+package Proyecto_Clinica.UI;
 
 import java.util.Scanner;
 

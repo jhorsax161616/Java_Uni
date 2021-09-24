@@ -1,30 +1,23 @@
-package Id_Static;
+package Proyecto_Clinica;
 
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    
-    public String name;
-    static int Id = 0;//Autoincrement
-    String email;
+public class Doctor extends User{
+       
     public String speciality;
     
-    Doctor(){
-        System.out.println("Construyendo el Objeto de Doctor");
-    }
-    Doctor(String name, String speciality){
-        Id++;
-        this.name = name;
-        this.speciality = speciality;
-    }
-    public void showName(){
-        System.out.println("Nombre: " + name);
-    }
-    public void showId(){
-        System.out.println("Id: " + Id);
+    Doctor(String name, String email){
+        super(name, email);
     }
     
+    public String getSpeciality() {
+        return speciality;
+    }
+
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
     //Se agrega la clase static AvaiableAppointment dentro de los <símbolos> 
     //para que el ArrayList solo acepte los tipos de datos que se encuentran 
     //dentro de la clase (ósea date, time).

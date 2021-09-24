@@ -1,19 +1,19 @@
-package Id_Static;
+package Proyecto_Clinica;
 
-import static Id_Static.UI.UIMenu.*;
+import static Proyecto_Clinica.UI.UIMenu.*;
 
 public class Main {
 
     public static void main(String[] args) {
         /*
-        // Incremento de Id automático por cada objeto creado
+        // Incremento de id automático por cada objeto creado
         Doctor myDoctor = new Doctor();
         myDoctor.name = "Mendez Pino";
         myDoctor.showName();
         myDoctor.showId();
         
         //Se pude incrementar sin crear un objeto
-        //Doctor.Id++;
+        //Doctor.id++;
         
         Doctor myDoctor2 = new Doctor();
         myDoctor2.name = "Mendez Pino";
