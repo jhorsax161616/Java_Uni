@@ -56,4 +56,11 @@ public class User {
             this.phoneNumber = phoneNumber;
         }
     }
+    
+    //El override me señala que este es un metodo extraido de una clase padre
+    @Override
+    public String toString(){
+        return "Name: "+ name + ", Email: "+ email +
+                "\nAddress: " + address + ", Phone: " + phoneNumber;
+    }
 }

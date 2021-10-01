@@ -1,6 +1,7 @@
 package Proyecto_Clinica;
 
 import static Proyecto_Clinica.UI.UIMenu.*;
+import java.util.Date;
 
 public class Main {
 
@@ -25,14 +26,21 @@ public class Main {
         //Mejorando la Modularidad del programa... 
         
         //showMenu();
+                
+        Patient patien = new Patient("Alex", "elote@gmail.com");
+        patien.setHeight(1.70);
+        patien.setWeight(52.5);
         
-        Doctor myDoctor = new Doctor("Elife Tino","Pediatria");
-        System.out.println(myDoctor.name);
-        System.out.println(myDoctor.speciality);
+        System.out.println(patien);
         
-        Patient patient = new Patient("Alex", "ale.gmail.com");
+        System.out.println();
         
-        
+        Doctor myDoctor = new Doctor("Sacramento", "tilto@clinic.com");
+        myDoctor.addAvailableAppointment(new Date(), "6am");
+        myDoctor.addAvailableAppointment(new Date(), "12pm");
+        myDoctor.addAvailableAppointment(new Date(), "8pm");
+
+        System.out.println(myDoctor);
     }
     
 }
