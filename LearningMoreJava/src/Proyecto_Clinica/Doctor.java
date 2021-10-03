@@ -7,7 +7,7 @@ public class Doctor extends User{
        
     public String speciality;
     
-    Doctor(String name, String email){
+    public Doctor(String name, String email){
         super(name, email);
     }
     

@@ -12,7 +12,7 @@ public class Patient extends User{
     private double height;
     private String blood;
     
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name, email);
     }
     //Convencion de nombres para una funcion que obtiene datos
