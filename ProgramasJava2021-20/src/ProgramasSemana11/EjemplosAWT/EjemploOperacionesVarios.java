@@ -40,7 +40,7 @@ public class EjemploOperacionesVarios extends java.applet.Applet {
         
         ChekGenero = new CheckboxGroup();
         generM = new Checkbox("Masculino", ChekGenero, true);
-        generM.setBounds(10, 70, 100, 30);
+        generM.setBounds(60, 70, 100, 30);
         add(generM);
         
         generF = new Checkbox("Femenino", ChekGenero, false);
